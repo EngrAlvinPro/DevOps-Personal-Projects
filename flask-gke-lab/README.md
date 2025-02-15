@@ -36,7 +36,7 @@ This serves as a **hands-on guide** to deploying a simple Python web app on a **
 
 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/flask-gke-lab.git
+git clone https://github.com/EngrAlvinPro/DevOps-Personal-Projects/tree/main/flask-gke-lab.git
 cd flask-gke-lab
 ```
 2️⃣ Create & Activate a Virtual Environment
