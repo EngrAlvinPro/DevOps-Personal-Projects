@@ -1,0 +1,19 @@
+grafana:
+  adminUser: admin
+  adminPassword: admin123   # Change this in production
+  service:
+    type: LoadBalancer       # Can be NodePort or ClusterIP
+  persistence:
+    enabled: true
+    size: 5Gi
+
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
+
+nodeExporter:
+  enabled: true
+  service:
+    annotations:
+      prometheus.io/scrape: "true"
+      prometheus.io/port: "9100"

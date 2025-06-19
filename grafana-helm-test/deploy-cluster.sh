@@ -1,0 +1,11 @@
+gcloud container clusters create grafana-helm \
+  --zone us-central1-a \
+  --release-channel regular \
+  --cluster-version latest \
+  --num-nodes 1 \
+  --enable-autoscaling \
+  --min-nodes 1 \
+  --max-nodes 2 \
+  --enable-ip-alias \
+  --enable-autorepair \
+  --enable-autoupgrade
